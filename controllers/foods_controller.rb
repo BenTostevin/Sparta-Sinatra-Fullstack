@@ -51,6 +51,8 @@ class FoodsController < Sinatra::Base
 
     id = params[:id]
 
+    @food = Food.find id
+
     erb :'foods/edit'
   end
 
