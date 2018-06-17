@@ -22,6 +22,20 @@ class Food
 
   end
 
+  def save
+
+    conn = Food.open_connection
+
+    if (!self.id)
+      sql = "INSERT INTO food_data (city,country,shopping) VALUES ('#{self.city}','#{self.country}','#{self.shopping}')"
+    else
+      sql = "UPDATE food_data SET city='#{self.city}', country='#{self.country}', shopping='#{self.shopping}' WHERE id ='#{self.id}'"
+    end
+
+    conn.exec(sql)
+
+  end
+
   def self.find id
 
     conn = self.open_connection
@@ -46,9 +60,5 @@ class Food
 
     food
   end
-
-
-
-
 
 end

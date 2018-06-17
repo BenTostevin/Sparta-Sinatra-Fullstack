@@ -35,12 +35,30 @@ class FoodsController < Sinatra::Base
 
   # Create
   post "/foods" do
+    food = Food.new
 
+    food.city = params[:city]
+    food.country = params[:country]
+    food.shopping = params[:shopping]
+
+    food.save
+
+    redirect '/foods'
   end
 
   # Update
-  put '/foods/:id'  do
+  put '/foods/:id' do
 
+    id = params[:id]
+    food = Food.find id
+
+    food.city = params[:city]
+    food.country = params[:country]
+    food.shopping = params[:shopping]
+
+    food.save
+
+    redirect '/foods'
   end
 
   # Destroy
