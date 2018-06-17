@@ -1,1 +1,11 @@
 <h1> Index Page </h1>
+
+<% @foods.each do |food| %>
+<div>
+  <h3><%= food.id %></h3>
+  <h3><%= food.city %></h3>
+  <h3><%= food.country %></h3>
+  <h3><%= food.shopping %></h3>
+  <p><a href="/foods/<%= food.id %>">See more</a></p>
+</div>
+<% end %>
