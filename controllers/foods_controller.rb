@@ -11,7 +11,7 @@ class FoodsController < Sinatra::Base
   # Index
   get '/foods' do
 
-    # @foods = Food.all
+    @foods = Food.all
 
     erb :'foods/index'
   end
@@ -25,6 +25,8 @@ class FoodsController < Sinatra::Base
   get '/foods/:id' do
 
     id = params[:id]
+
+    @food = Food.find id
 
     erb :'foods/show'
   end

@@ -5,7 +5,7 @@ CREATE TABLE food_data (
   id SERIAL PRIMARY KEY,
   city VARCHAR(50),
   country VARCHAR(50),
-  shopping VARCHAR(50)
+  shopping VARCHAR(50),
 
 );
 
