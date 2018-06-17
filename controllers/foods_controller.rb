@@ -11,8 +11,9 @@ class FoodsController < Sinatra::Base
   # Index
   get '/foods' do
 
-    erb :'foods/index'
+    # @foods = Food.all
 
+    erb :'foods/index'
   end
 
   # New
@@ -22,9 +23,10 @@ class FoodsController < Sinatra::Base
 
   # Show
   get '/foods/:id' do
+
     id = params[:id]
 
-    "SHOW FOOD #{ id }"
+    erb :'foods/show'
   end
 
   # Create
@@ -44,8 +46,10 @@ class FoodsController < Sinatra::Base
 
   # Edit
   get '/foods/:id/edit'  do
+
     id = params[:id]
-    "EDIT THE EXISTING FOOD #{ id }"
+
+    erb :'foods/edit'
   end
 
 end

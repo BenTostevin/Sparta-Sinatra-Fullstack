@@ -1,11 +1,11 @@
-DROP TABLE IF EXISTS food;
+DROP TABLE IF EXISTS food_data;
 
-CREATE TABLE food (
+CREATE TABLE food_data (
 
   id SERIAL PRIMARY KEY,
-  city TEXT,
-  country TEXT,
-  shopping TEXT
+  city VARCHAR(50),
+  country VARCHAR(50),
+  shopping VARCHAR(50)
 
 );
 
