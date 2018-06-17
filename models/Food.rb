@@ -1,5 +1,5 @@
 class Food
 
-  attr_accessor :id, :name, :city, :country, :shopping
+  attr_accessor :id, :city, :country, :shopping
 
 end
