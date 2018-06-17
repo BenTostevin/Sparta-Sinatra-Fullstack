@@ -11,6 +11,8 @@ class FoodsController < Sinatra::Base
   # Index
   get '/foods' do
 
+    # @foods = Food.all
+
     erb :'foods/index'
   end
 
