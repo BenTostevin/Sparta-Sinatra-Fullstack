@@ -42,7 +42,7 @@ class Food
     food.id = food_data['id']
     food.city = food_data['city']
     food.country = food_data['country']
-    food.shopping = food_data['shoppping']
+    food.shopping = food_data['shopping']
 
     food
   end
