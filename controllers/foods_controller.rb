@@ -18,7 +18,9 @@ class FoodsController < Sinatra::Base
 
   # New
   get '/foods/new' do
-    "NEW FOOD"
+    @food = Food.new
+
+    erb :'foods/new'
   end
 
   # Show
