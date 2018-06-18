@@ -18,7 +18,9 @@ class FoodsController < Sinatra::Base
 
   # New
   get '/foods/new' do
-    "NEW FOOD"
+    @food = Food.new
+
+    erb :'foods/new'
   end
 
   # Show
@@ -33,23 +35,47 @@ class FoodsController < Sinatra::Base
 
   # Create
   post "/foods" do
+    food = Food.new
 
+    food.city = params[:city]
+    food.country = params[:country]
+    food.shopping = params[:shopping]
+
+    food.save
+
+    redirect '/foods'
   end
 
   # Update
-  put '/foods/:id'  do
+  put '/foods/:id' do
 
+    id = params[:id]
+    food = Food.find id
+
+    food.city = params[:city]
+    food.country = params[:country]
+    food.shopping = params[:shopping]
+
+    food.save
+
+    redirect '/foods'
   end
 
   # Destroy
   delete '/foods/:id'  do
+    id = params[:id].to_i
 
+    Food.destroy id
+
+    redirect '/foods'
   end
 
   # Edit
   get '/foods/:id/edit'  do
 
     id = params[:id]
+
+    @food = Food.find id
 
     erb :'foods/edit'
   end
