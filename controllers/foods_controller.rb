@@ -34,7 +34,7 @@ class FoodsController < Sinatra::Base
   end
 
   # Create
-  post "/foods" do
+  post "/foods/" do
     food = Food.new
 
     food.city = params[:city]
