@@ -1,4 +1,4 @@
-<form action="/foods<% if(@food.id != '') %>/<%= @food.id %><% end %>" method="POST">
+<form action="/foods/<%= @food.id %>" method="POST">
   <div>
     <label>City</label>
     <input type="text" name="city" placeholder="Enter the city" value="<%= @food.city %>">

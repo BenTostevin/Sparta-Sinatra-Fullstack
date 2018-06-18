@@ -8,4 +8,14 @@ class PlacesController < Sinatra::Base
     register Sinatra::Reloader
   end
 
-  
+  # Index
+  get '/places' do
+
+    @places = Place.all
+
+    erb :'places/index'
+  end
+
+
+
+end
