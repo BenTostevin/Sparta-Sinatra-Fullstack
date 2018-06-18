@@ -1,0 +1,48 @@
+/*
+Error: Invalid CSS after "  background-color": expected ";", was ": blue;"
+        on line 3 of public/scss/main.scss
+
+1: h1 {
+2:   color: red
+3:   background-color: blue;
+4: }
+
+Backtrace:
+public/scss/main.scss:3
+/Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1278:in `expected'
+/Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1208:in `expected'
+/Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1203:in `tok!'
+/Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:804:in `block in try_declaration'
+/Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1254:in `rethrow'
+/Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:809:in `try_declaration'
+/Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:732:in `declaration_or_ruleset'
+/Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:697:in `block_child'
+/Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:686:in `block_contents'
+/Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:678:in `block'
+/Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:670:in `ruleset'
+/Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:696:in `block_child'
+/Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:686:in `block_contents'
+/Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:137:in `stylesheet'
+/Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:41:in `parse'
+/Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:414:in `_to_tree'
+/Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"  background-color\": expected \";\", was \": blue;\"\A         on line 3 of public/scss/main.scss\A \A 1: h1 {\A 2:   color: red\A 3:   background-color: blue;\A 4: }"; }

@@ -1,0 +1,17 @@
+<h1> Index Page </h1>
+
+<% @foods.each do |food| %>
+<div>
+  <h3><%= food.id %></h3>
+  <!-- <h3><%= food.city %></h3>
+  <h3><%= food.country %></h3> -->
+  <h3><%= food.shopping %></h3>
+  <p><a href="/foods/<%= food.id %>">See more</a></p>
+</div>
+
+<form action="/foods/<%= food.id %>" method="post">
+  <input type="submit" name="" value="Delete">
+  <input type="hidden" name="_method" value="DELETE">
+</form>
+
+<% end %>

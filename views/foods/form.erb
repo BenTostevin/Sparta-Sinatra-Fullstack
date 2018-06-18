@@ -1,0 +1,25 @@
+<form action="/foods/<%= @food.id %>" method="POST">
+
+  <div>
+    <label>City</label>
+    <input type="text" name="city" placeholder="Enter the city" value="<%= @food.city %>">
+  </div>
+
+  <div>
+    <label>Country</label>
+    <input type="text" name="country" placeholder="Enter the country" value="<%= @food.country %>">
+  </div>
+
+  <div>
+    <label>Shopping</label>
+    <input type="text" name="shopping" placeholder="Enter the shopping" value="<%= @food.shopping %>">
+  </div>
+
+  <div>
+    <input type="submit" value="Save Post">
+  </div>
+  <% if(@food.id) %>
+    <input type="hidden" name="_method" value="PUT">
+  <% end %>
+
+</form>

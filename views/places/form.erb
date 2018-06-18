@@ -1,0 +1,19 @@
+<form action="/places/<%= @place.id %>" method="POST">
+  <div>
+    <label>Country</label>
+    <input type="text" name="country_name" placeholder="Enter the country" value="<%= @place.country_name %>">
+  </div>
+
+  <div>
+    <label>Currency</label>
+    <input type="text" name="currency" placeholder="Enter the currency" value="<%= @place.currency %>">
+  </div>
+
+  <div>
+    <input type="submit" value="Save Post">
+  </div>
+  <% if(@place.id) %>
+    <input type="hidden" name="_method" value="PUT">
+  <% end %>
+
+</form>
