@@ -50,6 +50,14 @@ class Food
 
   end
 
+  def self.destroy id
+    conn = self.open_connection
+
+    sql = "DELETE FROM post WHERE id=#{id}"
+
+    conn.exec(sql)
+  end
+
   def self.hydrate food_data
     food = Food.new
 

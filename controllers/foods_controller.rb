@@ -63,7 +63,11 @@ class FoodsController < Sinatra::Base
 
   # Destroy
   delete '/foods/:id'  do
+    id = params[:id].to_i
 
+    Food.destroy id
+
+    redirect '/foods'
   end
 
   # Edit
