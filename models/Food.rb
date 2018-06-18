@@ -53,7 +53,7 @@ class Food
   def self.destroy id
     conn = self.open_connection
 
-    sql = "DELETE FROM post WHERE id=#{id}"
+    sql = "DELETE FROM food_data WHERE id=#{id}"
 
     conn.exec(sql)
   end

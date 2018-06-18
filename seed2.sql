@@ -4,7 +4,7 @@ CREATE TABLE place_data (
 
   id SERIAL PRIMARY KEY,
   country_name VARCHAR(50),
-  currency VARCHAR(50),
+  currency VARCHAR(50)
 
 );
 

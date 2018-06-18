@@ -9,4 +9,8 @@ require_relative './controllers/places_controller.rb'
 
 use Rack::Reloader
 use Rack::MethodOverride
-run FoodsController
+
+run Rack::Cascade.new([
+  FoodsController,
+  PlacesController
+  ])
