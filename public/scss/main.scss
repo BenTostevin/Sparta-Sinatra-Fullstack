@@ -1,4 +1,16 @@
-h1 {
-  color: red
-  background-color: blue;
+html {
+  background-color: rgb(80, 216, 255);
+  font-family: helvetica;
+  color: white;
+
+  h1 {
+    font-family: impact;
+  }
+  div {
+    border: 2px black solid;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+  }
 }
