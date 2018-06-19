@@ -1,0 +1,14 @@
+html {
+  background-color: #50d8ff;
+  font-family: helvetica;
+  color: white; }
+  html h1 {
+    font-family: impact; }
+  html div {
+    border: 2px black solid;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column; }
+
+/*# sourceMappingURL=main.css.map */
